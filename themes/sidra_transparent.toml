@@ -1,6 +1,10 @@
-# Sidra palette and syntax highlighting with a transparent editor background.
+# General
 inherits = "sidra"
 
+# UI
 "ui.background" = {}
 "ui.statusline" = { bg = "default" }
 "ui.statusline.inactive" = { bg = "default" }
+
+# Markup
+"markup.italic" = { modifiers = [] }

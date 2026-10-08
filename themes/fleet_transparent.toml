@@ -18,3 +18,7 @@ inherits = "fleet_dark"
 "ui.cursorline" = { bg = "#303133" }
 "ui.cursorline.primary" = { bg = "#383a3d" }
 "ui.cursorline.secondary" = { bg = "#303133" }
+
+# Markup
+"markup.italic" = { modifiers = [] }
+"markup.link.url" = { modifiers = ["underlined"] }
