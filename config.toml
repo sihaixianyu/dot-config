@@ -9,16 +9,21 @@ color-modes = true
 line-number = "relative"
 breadcrumb = { enable = true, path = "file", max-depth = 4 }
 bufferline = { render-mode = "multiple", separator = "|" }
-gutters = ["line-numbers", "diff", "diagnostics", "spacer"]
+gutters = { layout = [
+  "line-numbers",
+  "diff",
+  "diagnostics",
+  "spacer",
+], line-numbers = { same-color = true } }
 
 search = { smart-case = true }
 soft-wrap = { enable = true }
 file-picker = { hidden = false }
 
 end-of-line-diagnostics = "hint"
-inline-blame = { show = "cursor-line", auto-fetch = false }
-inline-diagnostics = { cursor-line = "hint" }
 completion-highlight = { highlight-type = "theme-colors" }
+inline-blame = { show = "cursor-line", auto-fetch = false }
+inline-diagnostics = { cursor-line = "hint", show-virtual-lines = true }
 
 [editor.lsp]
 display-messages = true
