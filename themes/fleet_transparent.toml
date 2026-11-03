@@ -5,6 +5,7 @@ inherits = "fleet_dark"
 "ui.background" = {}
 "ui.window" = { fg = "#536273" }
 "ui.statusline" = { bg = "default" }
+"ui.popup.explorer" = { fg = "Gray 120", bg = "default" }
 
 # Gutter
 "ui.linenr" = { fg = "#7f8b99" }
