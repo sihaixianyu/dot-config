@@ -1,32 +1,29 @@
 # C++
 [[language]]
 name = "cpp"
-auto-format = true
 indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cmake"
+language-servers = ["neocmakelsp"]
 
 # Rust
 [[language]]
 name = "rust"
-auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
 # Go
 [[language]]
 name = "go"
-auto-format = true
 indent = { tab-width = 4, unit = "    " }
+language-servers = ["gopls"]
 
 # Python
 [[language]]
 name = "python"
-auto-format = true
 indent = { tab-width = 4, unit = "    " }
 language-servers = [
   "pyright",
-  { name = "ty", only-features = [
-    "diagnostics",
-    "inlay-hints",
-  ] },
   { name = "ruff", only-features = [
     "diagnostics",
     "code-action",
@@ -38,29 +35,23 @@ language-servers = [
 command = "pyright-langserver"
 args = ["--stdio"]
 
-[language-server.ty]
-command = "ty"
-args = ["server"]
-
 [language-server.ruff]
 command = "ruff"
-args = ["server", "--preview"]
+args = ["server"]
 
 # Bash
 [[language]]
 name = "bash"
-auto-format = true
 indent = { tab-width = 4, unit = "    " }
 
 # JSON
 [[language]]
 name = "json"
-auto-format = true
 indent = { tab-width = 2, unit = "    " }
 
 # TOML
 [[language]]
 name = "toml"
-auto-format = true
 indent = { tab-width = 4, unit = "    " }
+language-servers = ["taplo"]
 formatter = { command = "taplo", args = ["fmt", "-"] }

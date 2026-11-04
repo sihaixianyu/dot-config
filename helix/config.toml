@@ -1,13 +1,11 @@
-# General
 theme = "fleet_transparent"
 
-# Editor
 [editor]
 cursorline = true
 true-color = true
 color-modes = true
 line-number = "relative"
-bufferline = { render-mode = "multiple", separator = "|" }
+bufferline = { render-mode = "multiple", separator = "" }
 gutters = { layout = [
   "line-numbers",
   "diff",
@@ -15,20 +13,17 @@ gutters = { layout = [
   "spacer",
 ], line-numbers = { same-color = true } }
 
-search = { smart-case = true }
 soft-wrap = { enable = true }
 file-picker = { hidden = false }
 
-end-of-line-diagnostics = "hint"
 completion-highlight = { highlight-type = "theme-colors" }
-inline-blame = { show = "cursor-line", auto-fetch = false }
+inline-blame = { show = "cursor-line", auto-fetch = true }
 inline-diagnostics = { cursor-line = "hint", show-virtual-lines = true }
+notifications = { shadow = { enable = false } }
 
 [editor.lsp]
-display-messages = true
 display-inlay-hints = true
 signature-help-position = "below"
-color-swatches-string = "■"
 
 [editor.persistence]
 old-files = true

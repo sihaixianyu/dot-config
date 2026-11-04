@@ -1,0 +1,24 @@
+# General
+auto-update = download
+auto-update-channel = stable
+
+# Window
+window-width = 130
+window-height = 50
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = true
+
+# Background
+background-blur = 20
+background-opacity = 0.8
+
+# Font
+font-family = "Maple Mono NF CN"
+font-size = 12
+
+# Cursor
+cursor-style = underline
+cursor-color = "#00FFFF"
+adjust-cursor-thickness = 150%
+shell-integration-features = no-cursor

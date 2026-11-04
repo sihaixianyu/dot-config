@@ -1,0 +1,20 @@
+onboarding = false
+
+[ui]
+sidebar_width = 20
+sidebar_min_width = 15
+sidebar_max_width = 25
+
+[theme]
+name = "catppuccin"
+
+[theme.custom]
+panel_bg = "transparent"
+sidebar_bg = "transparent"
+
+[keys]
+previous_workspace = "prefix+up"
+next_workspace = "prefix+down"
+
+previous_tab = ["prefix+p", "prefix+left"]
+next_tab = ["prefix+n", "prefix+right"]

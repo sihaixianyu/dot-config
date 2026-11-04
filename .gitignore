@@ -1,0 +1,20 @@
+# Ghostty local backups
+ghostty/config.bak.*
+
+# Generic backup files
+*.bak.*
+*.orig
+*~
+
+# macOS
+.DS_Store
+
+# herdr: runtime state, not configuration
+herdr/session.json
+herdr/session-snapshots/
+herdr/*.log
+herdr/*.sock
+herdr/*.sock.*
+herdr/.plugins.lock
+herdr/plugins.json
+herdr/plugins/

@@ -1,35 +1,27 @@
-# Personal Config for Helix
+# dot-config
 
-> Helix Editor: https://github.com/helix-editor/helix
+My `~/.config` — themes are tuned for transparent, low-saturation backgrounds.
 
-## Editing Relevant
+| Path | App | Notes |
+| --- | --- | --- |
+| `ghostty/config` | [Ghostty](https://ghostty.org) | font, transparency + blur, cursor |
+| `helix/` | [Helix](https://github.com/helix-editor/helix) | see [`helix/README.md`](helix/README.md) |
+| `leaf/` | leaf | theme + UI options |
+| `herdr/config.toml` | herdr | theme, sidebar width, prefix keys |
+| `sheldon/plugins.toml` | [sheldon](https://github.com/rossmacarthur/sheldon) | zsh plugin manager |
+| `starship.toml` | [Starship](https://starship.rs) | prompt format, palette |
 
-- Add mapping from 'h' to '<-'
+## Shared theme
 
-- Add mapping from 'l' to '->'. 
+`fleet_transparent` is the common theme, kept in sync between Helix and leaf:
 
-## Language Relevant
+- `helix/themes/fleet_transparent.toml`
+- `leaf/themes/fleet_transparent.toml`
 
-- C++
+Both pair with a translucent terminal, so panel and selection backgrounds are
+deliberately semi-transparent rather than solid.
 
-- Rust
+## Not tracked
 
-- Go
-
-- Java
-
-- Python
-
-- Bash
-
-- Json
-
-- Toml
-
-- CMake
-
-- Starlark
-
-## Apperance Relevant
-
-- Fleet Transparent Theme
+Runtime state is ignored on purpose (`.gitignore`): herdr session snapshots,
+sockets, logs, plugin checkouts, and local `*.bak.*` files.
