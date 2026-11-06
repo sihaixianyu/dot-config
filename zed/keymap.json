@@ -1,0 +1,20 @@
+[
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-cmd-up": "editor::GoToDefinition",
+      "ctrl-cmd-down": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-left": "pane::GoBack",
+      "ctrl-cmd-right": "pane::GoForward",
+      "cmd--": null,
+      "cmd-=": null,
+      "cmd-shift--": null,
+      "cmd-shift-=": null
+    }
+  }
+]
