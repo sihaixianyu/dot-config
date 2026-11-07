@@ -1,8 +1,7 @@
-# Forest Light
-# Based on Everforest (Light Medium) — no italics, dimmer inline-blame
+# Forest
 inherits = "everforest_light"
 
-# No italics anywhere
+# Markup
 "constant.builtin" = { fg = "purple" }
 "comment" = { fg = "grey1" }
 "variable.builtin" = { fg = "purple" }
@@ -10,10 +9,9 @@ inherits = "everforest_light"
 "attribute" = { fg = "purple" }
 "markup.italic" = { modifiers = [] }
 
-# Inline blame: dark grey-green instead of the default bright fg
+# Blame
 "ui.virtual.inline-blame" = { fg = "#6f7d70" }
 
-# Popup / picker frames. Pickers clear their area with `ui.background` and draw the
-# border with no style of its own, so the border color comes from this fg.
+# Popup
 "ui.background" = { fg = "#708089", bg = "bg0" }
 "ui.popup.border" = { fg = "#708089" }

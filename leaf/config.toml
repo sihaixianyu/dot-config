@@ -138,4 +138,4 @@ watch = false
 #   "-NNrows": keep NN rows visible as overlap
 # Percentages above 100 are allowed. Invalid values use the default.
 # Default: "20rows"
-# page-scroll-size = "20rows"
+page-scroll-size = "50%"

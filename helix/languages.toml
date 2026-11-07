@@ -3,6 +3,7 @@
 name = "cpp"
 indent = { tab-width = 4, unit = "    " }
 
+# CMake
 [[language]]
 name = "cmake"
 language-servers = ["neocmakelsp"]
@@ -31,14 +32,6 @@ language-servers = [
   ] },
 ]
 
-[language-server.pyright]
-command = "pyright-langserver"
-args = ["--stdio"]
-
-[language-server.ruff]
-command = "ruff"
-args = ["server"]
-
 # Bash
 [[language]]
 name = "bash"
@@ -55,3 +48,12 @@ name = "toml"
 indent = { tab-width = 4, unit = "    " }
 language-servers = ["taplo"]
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+# LSP
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]

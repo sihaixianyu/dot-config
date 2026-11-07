@@ -12,6 +12,7 @@ window-padding-balance = true
 # Background
 background-blur = 20
 background-opacity = 0.8
+unfocused-split-opacity = 1
 
 # Font
 font-family = "Maple Mono NF CN"

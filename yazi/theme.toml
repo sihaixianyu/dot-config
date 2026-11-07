@@ -1,0 +1,74 @@
+# TokyoNight
+
+[mgr]
+cwd = { fg = "#7aa2f7" }
+find_keyword = { fg = "#1a1b26", bg = "#e0af68", bold = true }
+find_position = { fg = "#bb9af7" }
+symlink_target = { fg = "#565f89" }
+marker_copied = { fg = "#9ece6a", bg = "#9ece6a" }
+marker_cut = { fg = "#f7768e", bg = "#f7768e" }
+marker_marked = { fg = "#7dcfff", bg = "#7dcfff" }
+marker_selected = { fg = "#e0af68", bg = "#e0af68" }
+border_style = { fg = "#414868" }
+
+[indicator]
+parent = { bg = "#24283b" }
+current = { bg = "#292e42", bold = true }
+preview = { bg = "#24283b" }
+
+[tabs]
+active = { fg = "#c0caf5", bg = "#33467c", bold = true }
+inactive = { fg = "#565f89" }
+
+[mode]
+normal_main = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+normal_alt = { fg = "#7aa2f7", bg = "#24283b" }
+select_main = { fg = "#1a1b26", bg = "#e0af68", bold = true }
+select_alt = { fg = "#e0af68", bg = "#24283b" }
+unset_main = { fg = "#1a1b26", bg = "#f7768e", bold = true }
+unset_alt = { fg = "#f7768e", bg = "#24283b" }
+
+[status]
+overall = { fg = "#c0caf5" }
+perm_type = { fg = "#7aa2f7" }
+perm_read = { fg = "#e0af68" }
+perm_write = { fg = "#f7768e" }
+perm_exec = { fg = "#9ece6a" }
+perm_sep = { fg = "#565f89" }
+progress_label = { fg = "#c0caf5", bold = true }
+progress_normal = { fg = "#7aa2f7", bg = "#24283b" }
+progress_error = { fg = "#f7768e", bg = "#24283b" }
+
+[pick]
+border = { fg = "#414868" }
+active = { fg = "#c0caf5", bg = "#33467c" }
+inactive = { fg = "#c0caf5" }
+
+[input]
+border = { fg = "#414868" }
+title = { fg = "#7aa2f7" }
+value = { fg = "#c0caf5" }
+selected = { bg = "#33467c" }
+
+[confirm]
+border = { fg = "#414868" }
+title = { fg = "#7aa2f7" }
+body = { fg = "#c0caf5" }
+btn_yes = { fg = "#c0caf5", bg = "#33467c", bold = true }
+btn_no = { fg = "#c0caf5", bg = "#24283b" }
+
+[notify]
+title_info = { fg = "#7dcfff" }
+title_warn = { fg = "#e0af68" }
+title_error = { fg = "#f7768e" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#7dcfff" },
+  { mime = "{audio,video}/*", fg = "#bb9af7" },
+  { mime = "{application/zip,application/gzip,application/x-tar,application/x-bzip*,application/x-7z-compressed,application/x-rar}", fg = "#e0af68" },
+  { url = "*", is = "orphan", fg = "#f7768e" },
+  { url = "*", is = "exec", fg = "#9ece6a" },
+  { url = "*/", fg = "#7aa2f7" },
+  { url = "*", fg = "#c0caf5" },
+]

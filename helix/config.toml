@@ -1,6 +1,8 @@
+# Appearance
 theme = "fleet_transparent"
 
 [editor]
+# Display
 cursorline = true
 true-color = true
 color-modes = true
@@ -13,29 +15,35 @@ gutters = { layout = [
   "spacer",
 ], line-numbers = { same-color = true } }
 
+# Editing
 soft-wrap = { enable = true }
 file-picker = { hidden = false }
 
+# Feedback
 completion-highlight = { highlight-type = "theme-colors" }
 inline-blame = { show = "cursor-line", auto-fetch = true }
 inline-diagnostics = { cursor-line = "hint", show-virtual-lines = true }
 notifications = { shadow = { enable = false } }
 
+# LSP
 [editor.lsp]
 display-inlay-hints = true
 signature-help-position = "below"
 
+# Persistence
 [editor.persistence]
 old-files = true
 commands = true
 search = true
 clipboard = false
 
+# Cursor
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
+# Statusline
 [editor.statusline]
 separator = "|"
 mode.normal = "NORMAL"
@@ -61,18 +69,20 @@ right = [
   "position-percentage",
   "file-type",
 ]
-
-
+# Tools
 [keys.normal.space]
+# Leaf
 m = [
-  ':insert-output leaf "$(echo %{buffer_name} | sed "s|^~|$HOME|")" >/dev/tty',
+  ':set mouse false',
+  ':insert-output leaf "$(echo %{buffer_name} | sed "s|^~|$HOME|")" </dev/tty >/dev/tty; printf "\033[?1049h\033[?2004h" > /dev/tty',
+  ':set mouse true',
   ':redraw',
 ]
-y = [
-  ':sh rm -f /tmp/helix-yazi-chooser',
-  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/helix-yazi-chooser',
-  ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
-  ':open %sh{cat /tmp/helix-yazi-chooser}',
+# Yazi
+o = [
+  ':insert-output rm -f /tmp/helix-yazi-chooser /tmp/helix-yazi-cwd; yazi "%{buffer_name}" --chooser-file=/tmp/helix-yazi-chooser --cwd-file=/tmp/helix-yazi-cwd; printf "\033[?1049h\033[?2004h" > /dev/tty',
+  ':open %sh{if [ -s /tmp/helix-yazi-chooser ]; then cat /tmp/helix-yazi-chooser; else printf "%%s" "%{buffer_name}"; fi}',
+  ':cd %sh{if [ -s /tmp/helix-yazi-cwd ]; then cat /tmp/helix-yazi-cwd; else pwd; fi}',
   ':redraw',
   ':set mouse false',
   ':set mouse true',
