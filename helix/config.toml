@@ -18,12 +18,13 @@ gutters = { layout = [
 # Editing
 soft-wrap = { enable = true }
 file-picker = { hidden = false }
+auto-reload = { focus-gained = true, periodic = { enable = true, interval = 1000 } }
 
 # Feedback
 completion-highlight = { highlight-type = "theme-colors" }
 inline-blame = { show = "cursor-line", auto-fetch = true }
 inline-diagnostics = { cursor-line = "hint", show-virtual-lines = true }
-notifications = { shadow = { enable = false } }
+notifications = { shadow = { enable = false }, border = { radius = 10 } }
 
 # LSP
 [editor.lsp]

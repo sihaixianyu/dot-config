@@ -5,12 +5,19 @@ inherits = "fleet_dark"
 "ui.background" = {}
 "ui.window" = { fg = "#536273" }
 "ui.statusline" = { bg = "default" }
+"ui.statusline.normal" = { fg = "#202124", bg = "#A8C7A0", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "#202124", bg = "#82AAFF", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "#202124", bg = "#FFCB6B", modifiers = ["bold"] }
 "ui.popup.explorer" = { fg = "Gray 120", bg = "default" }
+
+# Popup
+"ui.popup" = { bg = "default" }
+"ui.popup.border" = { fg = "#ffffff", bg = "default" }
 
 # Gutter
 "ui.linenr" = { fg = "#7f8b99" }
-"ui.linenr.normal" = { fg = "#82AAFF", modifiers = ["bold"] }
-"ui.linenr.insert" = { fg = "#C3E88D", modifiers = ["bold"] }
+"ui.linenr.normal" = { fg = "#A8C7A0", modifiers = ["bold"] }
+"ui.linenr.insert" = { fg = "#82AAFF", modifiers = ["bold"] }
 "ui.linenr.select" = { fg = "#FFCB6B", modifiers = ["bold"] }
 
 # Selection

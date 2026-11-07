@@ -54,6 +54,7 @@ theme = "fleet_transparent"
 # Priority: --width flag > LEAF_WIDTH > this setting > terminal width
 # Minimum: 20
 # Default: terminal width (no limit)
+# Leave width unset to follow the current terminal width automatically.
 # width = 80
 
 # Watch mode: automatically reload when the file changes
