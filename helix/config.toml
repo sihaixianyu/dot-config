@@ -21,6 +21,7 @@ file-picker = { hidden = false }
 auto-reload = { focus-gained = true, periodic = { enable = true, interval = 1000 } }
 
 # Feedback
+popup-border = "popup"
 completion-highlight = { highlight-type = "theme-colors" }
 inline-blame = { show = "cursor-line", auto-fetch = true }
 inline-diagnostics = { cursor-line = "hint", show-virtual-lines = true }

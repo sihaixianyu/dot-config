@@ -9,6 +9,9 @@ inherits = "everforest_light"
 "attribute" = { fg = "purple" }
 "markup.italic" = { modifiers = [] }
 
+# Gutter
+"ui.linenr" = { fg = "grey0" }
+
 # Blame
 "ui.virtual.inline-blame" = { fg = "#6f7d70" }
 
