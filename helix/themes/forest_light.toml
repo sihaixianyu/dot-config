@@ -11,6 +11,9 @@ inherits = "everforest_light"
 
 # Gutter
 "ui.linenr" = { fg = "grey0" }
+"ui.linenr.normal" = { fg = "#A8C7A0", modifiers = ["bold"] }
+"ui.linenr.insert" = { fg = "#82AAFF", modifiers = ["bold"] }
+"ui.linenr.select" = { fg = "#FFCB6B", modifiers = ["bold"] }
 
 # Blame
 "ui.virtual.inline-blame" = { fg = "#6f7d70" }

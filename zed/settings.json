@@ -1,0 +1,57 @@
+{
+  // General
+  "helix_mode": true,
+  "format_on_save": "on",
+  "diff_view_style": "unified",
+  "project_panel": {
+    "dock": "left",
+  },
+  // Theme
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+  // Buffer
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 14,
+  "buffer_line_height": {
+    "custom": 1.5,
+  },
+  "wrap_guides": [120],
+  "minimap": {
+    "show": "always",
+    "max_width_columns": 120,
+  },
+  // Terminal
+  "terminal": {
+    "font_family": "Maple Mono NF CN",
+    "font_size": 12,
+  },
+  // Agent
+  "agent": {
+    "default_model": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "threads_sidebar": {
+      "position": "right",
+    },
+  },
+  // Languages
+  "languages": {
+    "C": {
+      "language_servers": ["clice", "!clangd", "..."],
+    },
+    "C++": {
+      "language_servers": ["clice", "!clangd", "..."],
+    },
+  },
+}

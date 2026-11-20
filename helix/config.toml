@@ -80,12 +80,3 @@ m = [
   ':set mouse true',
   ':redraw',
 ]
-# Yazi
-o = [
-  ':insert-output rm -f /tmp/helix-yazi-chooser /tmp/helix-yazi-cwd; yazi "%{buffer_name}" --chooser-file=/tmp/helix-yazi-chooser --cwd-file=/tmp/helix-yazi-cwd; printf "\033[?1049h\033[?2004h" > /dev/tty',
-  ':open %sh{if [ -s /tmp/helix-yazi-chooser ]; then cat /tmp/helix-yazi-chooser; else printf "%%s" "%{buffer_name}"; fi}',
-  ':cd %sh{if [ -s /tmp/helix-yazi-cwd ]; then cat /tmp/helix-yazi-cwd; else pwd; fi}',
-  ':redraw',
-  ':set mouse false',
-  ':set mouse true',
-]

@@ -1,9 +1,9 @@
 onboarding = false
 
 [ui]
-sidebar_width = 20
-sidebar_min_width = 15
-sidebar_max_width = 25
+sidebar_width = 16
+sidebar_min_width = 12
+sidebar_max_width = 20
 
 [theme]
 name = "catppuccin"
