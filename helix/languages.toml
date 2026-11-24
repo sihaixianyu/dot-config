@@ -50,6 +50,10 @@ language-servers = ["taplo"]
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
 # LSP
+[language-server.tsc]
+command = "tsc"
+args = ["--lsp", "--stdio"]
+
 [language-server.pyright]
 command = "pyright-langserver"
 args = ["--stdio"]
@@ -57,3 +61,12 @@ args = ["--stdio"]
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
+
+# TypeScript
+[[language]]
+name = "typescript"
+language-servers = ["tsc"]
+
+[[language]]
+name = "tsx"
+language-servers = ["tsc"]

@@ -1,48 +1,51 @@
 {
   // General
-  "helix_mode": true,
   "format_on_save": "on",
-  "diff_view_style": "unified",
+  "restore_on_startup": "last_session",
   "project_panel": {
     "dock": "left",
+  },
+  "minimap": {
+    "show": "always",
+    "max_width_columns": 120,
   },
   // Theme
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark",
+    "light": "Dawnfox - blurred",
+    "dark": "Duskfox - blurred",
   },
   "icon_theme": {
     "mode": "system",
     "light": "Material Icon Theme",
     "dark": "Material Icon Theme",
   },
-  // Buffer
+  // Editor
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
   "buffer_line_height": {
     "custom": 1.5,
   },
+  "helix_mode": true,
+  "relative_line_numbers": "enabled",
   "wrap_guides": [120],
-  "minimap": {
-    "show": "always",
-    "max_width_columns": 120,
+  "code_lens": "on",
+  "inlay_hints": {
+    "enabled": true,
   },
+  "diff_view_style": "unified",
   // Terminal
   "terminal": {
-    "font_family": "Maple Mono NF CN",
+    "font_family": "JetBrainsMono Nerd Font",
     "font_size": 12,
   },
   // Agent
   "agent": {
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-flash",
+      "provider": "google",
+      "model": "gemini-3.8-flash",
       "enable_thinking": true,
-      "effort": "high",
-    },
-    "threads_sidebar": {
-      "position": "right",
+      "effort": "medium",
     },
   },
   // Languages

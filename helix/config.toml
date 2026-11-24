@@ -71,10 +71,13 @@ right = [
   "position-percentage",
   "file-type",
 ]
-# Tools
-[keys.normal.space]
-# Leaf
-m = [
+
+# Keys
+[keys]
+normal.C-l = [":copy-location-prepare", ":pipe-to %reg{λ}", ":copy-location-restore"]
+select.C-l = [":copy-location-prepare", ":pipe-to %reg{λ}", ":copy-location-restore"]
+
+normal.space.m = [
   ':set mouse false',
   ':insert-output leaf "$(echo %{buffer_name} | sed "s|^~|$HOME|")" </dev/tty >/dev/tty; printf "\033[?1049h\033[?2004h" > /dev/tty',
   ':set mouse true',

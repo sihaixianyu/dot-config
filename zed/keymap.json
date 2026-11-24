@@ -3,7 +3,22 @@
     "use_key_equivalents": true,
     "bindings": {
       "cmd-+": null,
-      "cmd--": null
-    }
-  }
+      "cmd--": null,
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-cmd-up": "editor::GoToDefinition",
+      "ctrl-cmd-down": "editor::FindAllReferences",
+      "ctrl-cmd-left": "pane::GoBack",
+      "ctrl-cmd-right": "pane::GoForward",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-l": "editor::CopyFileLocation",
+    },
+  },
 ]

@@ -1,0 +1,4 @@
+name = "copy-location"
+version = "0.1.0"
+description = "Copy the project-relative path and primary selection line numbers"
+entry = "init.lua"
